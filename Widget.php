@@ -149,12 +149,6 @@ class Memorycoin_Widget extends WP_Widget
 
     function widget($args, $instance)
     {
-        //extract($args);
-
-        print_r($args);
-        print_r($instance);
-
-
         $title = apply_filters('widget_title', $instance['title']); // The widget title
         $show_price = isset($instance['show_price']) ? $instance['show_price'] : false; // Show the MemoryCoins price
         $donate = isset($instance['donate_memorycoins']) ? $instance['donate_memorycoins'] : false; // Get some MemoryCoins for your blog
