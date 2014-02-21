@@ -13,7 +13,7 @@ Tested up to: WP 3.5.1, PHP 5.4
 define('mmc_widget_dir', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 define('mmc_btc', mmc_widget_dir . 'mmc_btc.json');
 define('btc_usd', mmc_widget_dir . 'btc_usd.json');
-define('mmc_widget_cache_time', 0); // 1 hours = 360 sec
+define('mmc_widget_cache_time', 60*60); // 1 hours = 360 sec
 
 function getData($url, $ref = null, $gzip = null)
 {
